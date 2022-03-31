@@ -1,0 +1,104 @@
+* {  
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Recordar que el arterisco es para todos los elementos del HTML*/
+
+.contenedor {
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1605184861733-be9f5814095e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=395&q=80");
+    background-size: cover;
+}
+/*
+.contenedor div{
+    background-color: black;
+}  El punto es para llamar las clases */
+
+.cuadro { 
+    width: 600px;
+    height: 600px;
+    display: grid; /*El display nos ayuda a hacer una rejilla, nosa da el mismo espacio entre contenedores*/
+    grid-template-columns: 1fr 1fr 1fr; /* si indico 1fr-fracción me hace la division de manera utomática de acuerdo al contenedor*/
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px; /* El gap sirve para espaciar los contenedores hijos, es dif del margen, aunque podría  especificar un gap bottom, 
+    su mayor funcionalidad se encuentra entre divs que están dentro de un div*/
+    background-color: black;
+
+} 
+
+/* los id son únicos|| Los id se utilizan más en js que en css*/
+
+.cuadro div{ /*cualquier div que esté dentro de mi cuadro*/
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+}
+
+.cuadro div:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+
+button{
+    padding: 20px;
+    background-color: #db4d59;
+    color: white;
+    outline: none;
+    align-self: center;
+    border: 0px;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: #d17ee6;
+    cursor: pointer;
+}
+
+.linecontainer{
+    position: relative;
+}
+
+
+#line{
+    position: absolute;
+    display: block;
+    background-color: blue;
+}
+
+.lineHorizontal{
+    height: 10px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.lineVertical{
+    height: 100%;
+    width: 10px;
+    top: 0px;
+    left: 0px;
+}
